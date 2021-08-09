@@ -1,0 +1,28 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in, headheight=15pt]{geometry}
+% Add/remove packages here
+\usepackage{amsmath}
+\usepackage{parskip}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage[swedish]{babel}   % Change this depending on the language you use
+
+\setlength\parindent{0pt}
+\setlength\parskip{6pt}
+\pagestyle{fancy}
+\fancyhf{}
+\cfoot{\thepage}
+
+% Configurations
+\newcommand{\tasknumber}{1}   % Change this number to switch between different assignments
+\lhead{}  % Add title here
+\newcommand{\assignmentFile}{assignment_\tasknumber.tex}   % Write the file name of your assignment here. An example is included
+\rhead{}  % Add your name inside {}
+% End of configurations 
+
+\begin{document}
+
+\input{\assignmentFile}
+
+\end{document}
